@@ -100,6 +100,18 @@ body.dark-theme{
   color: var(--first-color);
 }
 
+.todo__button{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.todo__button:hover{
+  color: var(--first-color);
+}
+
+
 /*==================== BASE ====================*/
 * {
   box-sizing: border-box;
@@ -189,7 +201,8 @@ img {
 }
 
 .nav__logo,
-.nav__toggle{
+.nav__toggle,
+.nav__to-do{
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -205,6 +218,15 @@ img {
 
 .nav__toggle{
   font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav__to-do:hover{
+  color: var(--first-color);
+}
+
+.nav__to-do{
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -615,7 +637,7 @@ img {
   .nav__menu{
     margin-left: auto;
   }
-  .change-theme{
+  .todo__button{
     margin: 0;
   }
 
