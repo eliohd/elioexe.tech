@@ -200,8 +200,7 @@ img {
 }
 
 .nav__logo,
-.nav__toggle,
-.nav__to-do{
+.nav__toggle{
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -217,15 +216,6 @@ img {
 
 .nav__toggle{
   font-size: 1.1rem;
-  cursor: pointer;
-}
-
-.nav__to-do:hover{
-  color: var(--first-color);
-}
-
-.nav__to-do{
-  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -246,6 +236,7 @@ img {
 .nav__list{
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+  justify-items: center;
 }
 
 .nav__link{
@@ -491,7 +482,6 @@ img {
 /*==================== FOOTER ====================*/
 .footer{
   padding-top: 2rem;
-  
 }
 
 .footer__container{
@@ -546,6 +536,7 @@ img {
   color: #fff;
 }
 
+
 /*========== SCROLL UP ==========*/
 
 
@@ -570,10 +561,15 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px){
+@media screen and (max-width: 400px){
   .container{
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
+  }
+  .footer{
+    padding-top: 2rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 }
 
