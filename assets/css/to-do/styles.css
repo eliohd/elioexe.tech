@@ -129,7 +129,6 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  
 }
 
 h1, h2, h3, h4 {
@@ -149,7 +148,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
   padding: 5rem 0 4rem;
@@ -202,7 +200,8 @@ img {
 }
 
 .nav__logo,
-.nav__toggle{
+.nav__toggle,
+.nav__to-do{
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
@@ -218,6 +217,15 @@ img {
 
 .nav__toggle{
   font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav__to-do:hover{
+  color: var(--first-color);
+}
+
+.nav__to-do{
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -270,7 +278,6 @@ img {
 .show-menu{
   bottom: 0;
 }
-
 /* Active link */
 
 
