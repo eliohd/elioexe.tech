@@ -206,10 +206,9 @@ img {
 }
 
 .nav__logo,
-.nav__toggle,
-.nav__to-do{
+.nav__toggle{
   color: var(--title-color);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semi-bold);
 }
 
 .nav__logo:hover{
@@ -261,6 +260,10 @@ img {
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
+}
+
+.nav__link:hover{
+  color: var(--first-color);
 }
 
 .nav__icon{

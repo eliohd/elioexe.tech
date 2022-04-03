@@ -198,11 +198,10 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-
 .nav__logo,
 .nav__toggle{
   color: var(--title-color);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semi-bold);
 }
 
 .nav__logo:hover{
@@ -216,6 +215,15 @@ img {
 
 .nav__toggle{
   font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav__to-do:hover{
+  color: var(--first-color);
+}
+
+.nav__to-do{
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -245,6 +253,10 @@ img {
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
+}
+
+.nav__link:hover{
+  color: var(--first-color);
 }
 
 .nav__icon{

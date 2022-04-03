@@ -202,7 +202,7 @@ img {
 .nav__logo,
 .nav__toggle{
   color: var(--title-color);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semi-bold);
 }
 
 .nav__logo:hover{
@@ -216,6 +216,15 @@ img {
 
 .nav__toggle{
   font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav__to-do:hover{
+  color: var(--first-color);
+}
+
+.nav__to-do{
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -236,7 +245,6 @@ img {
 .nav__list{
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  justify-items: center;
 }
 
 .nav__link{
@@ -246,6 +254,10 @@ img {
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
+}
+
+.nav__link:hover{
+  color: var(--first-color);
 }
 
 .nav__icon{
@@ -402,6 +414,7 @@ img {
   user-select: none;
   margin-left: 12px;
   word-wrap: break-word;
+  color: rgb(24, 24, 24);
 }
 .task label p.checked{
   text-decoration: line-through;
