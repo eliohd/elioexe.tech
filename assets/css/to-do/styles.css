@@ -574,15 +574,6 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 363px){
-  .filters span{
-    margin: 0 3px;
-    font-size: 17px;
-    color: #444444;
-    cursor: pointer;
-  }
-}
-
 @media screen and (max-width: 400px){
   .container{
     margin-left: var(--mb-1);
