@@ -583,6 +583,7 @@ footer{
 }
 
 @media screen and (max-width: 400px){
+}
   .nav__menu{
     padding: 2rem .25rem 4rem;
   }
@@ -590,10 +591,6 @@ footer{
   .nav__list{
     column-gap: 0;
   }
-
-  .footer__container{
-  }
-}
 
 /* For medium devices */
 @media screen and (min-width: 568px){
