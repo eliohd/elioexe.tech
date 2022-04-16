@@ -39,7 +39,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiper = new Swiper('.blog__container', {
+/*let swiper = new Swiper('.blog__container', {
     cssMode: true,
     loop: true,
     navigation: {

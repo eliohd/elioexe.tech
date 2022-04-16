@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        
+        <!--==================== FAVICON ====================-->
+        <link rel="shortcut icon" href="assets/img/favicon/favicon_light.svg" id="faviconTag"/>
+
+        <script>
+            const faviconTag = document.getElementById("faviconTag");
+            const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+            const changeFavicon = () => {
+                if (isDark.matches) faviconTag.href = "assets/img/favicon/favicon_dark.svg";
+                else faviconTag.href = "assets/img/favicon/favicon_light.svg";
+            };
+
+            changeFavicon();
+
+            // chrome + firefox
+            isDark.addEventListener('change', changeFavicon)
+
+            // safari
+            isDark.addListener(changeFavicon)
+        </script>
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>blog - this website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="https://elioexe.tech" class="nav__logo">elio</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                             <a href="https://elioexe.tech" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i> home
+                             </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> about
+                            </a>
+                       </li>
+                       <li class="nav__item">
+                            <a href="../blog" class="nav__link">
+                                <i class="uil uil-book nav__icon"></i> blog
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="../projects" class="nav__link">
+                                <i class="uil uil-folder nav__icon"></i> projects
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme Change Button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <a href="../to-do">
+                        <i class="uil uil-notes todo__button"></i>
+                    </a>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== ABOUT ====================-->
+            <section class="blog section" id="blog">
+                <h2 class="section__title">this website</h2>
+                <span class="blog-info">04/04/2022 / programming</span>
+
+                <div class="blog__container">
+                    <div class="blog__content">
+                        <p class="blog__para">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit veniam inventore saepe eos porro? Culpa nam quo minus voluptatem minima aspernatur modi omnis ipsam quisquam cumque possimus, illo obcaecati excepturi.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">elio</h1>
+                        <span class="footer__subtitle">student</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://elioexe.tech" class="footer__link">home</a>
+                        </li>
+                        <li>
+                            <a href="../about" class="footer__link">about</a>
+                        </li>
+                        <li>
+                            <a href="../blog" class="footer__link">blog</a>
+                        </li>
+                        <li>
+                            <a href="../projects" class="footer__link">projects</a>
+                        </li>
+                    </ul>
+
+                   <div class="footer__socials">
+                       <a href="https://github.com/eliohd" target="_blank" class="footer__social">
+                        <i class="uil uil-github-alt"></i>
+                       </a>
+                   </div> 
+                </div>
+                <p class="footer__copy">&#169; elio. all rights reserverd</p>
+            </div>
+        </footer>
+        <!--==================== MAIN JS ====================-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
