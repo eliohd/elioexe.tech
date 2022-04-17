@@ -314,7 +314,7 @@ img {
 .button__icon{
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
-  transition: 3s;
+  transition: 0.5s;
 }
 
 .button--flex{
@@ -323,7 +323,7 @@ img {
 }
 
 .blog__button:hover .button__icon{
-  transform: translateX(.5rem);
+  transform: translateX(.25rem);
 }
 
 
