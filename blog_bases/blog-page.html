@@ -5,15 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
         
         <!--==================== FAVICON ====================-->
-        <link rel="shortcut icon" href="assets/img/favicon/favicon_light.svg" id="faviconTag"/>
+        <link rel="shortcut icon" href="../assets/img/favicon/favicon_light.svg" id="faviconTag"/>
 
         <script>
             const faviconTag = document.getElementById("faviconTag");
             const isDark = window.matchMedia("(prefers-color-scheme: dark)");
 
             const changeFavicon = () => {
-                if (isDark.matches) faviconTag.href = "assets/img/favicon/favicon_dark.svg";
-                else faviconTag.href = "assets/img/favicon/favicon_light.svg";
+                if (isDark.matches) faviconTag.href = "../assets/img/favicon/favicon_dark.svg";
+                else faviconTag.href = "../assets/img/favicon/favicon_light.svg";
             };
 
             changeFavicon();
