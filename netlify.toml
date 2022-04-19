@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/*"
-  to = "/pages/page-not-found"
+  to = "/pages/page-not-found.html"
   status = 404
