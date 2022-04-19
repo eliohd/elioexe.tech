@@ -17,4 +17,4 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 
 # custom 404 page 
 
-ErrorDocument 404 /page-not-found.html
+ErrorDocument 404 /page-not-found
