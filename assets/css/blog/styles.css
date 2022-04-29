@@ -25,6 +25,8 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
+    --border-color: hsl(0, 0%, 93%);
+
     /*========== Font and typography ==========*/
     --body-font: 'DM Mono', monospace;
 
@@ -81,6 +83,8 @@ body.dark-theme{
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+
+  --border-color: hsl(0, 0%, 2%);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -338,8 +342,8 @@ img {
 
 .blog-box{
   width: 350px;
-  background-color: #fff;
-  border: 1px solid #ececec;
+  background-color: var(--body-color);
+  border: 1px solid var(--border-color);
   margin: 20px;
 
   border-radius: 10px;
@@ -373,7 +377,7 @@ img {
 .blog-text .blog-title{
   font-size: 1.3rem;
   font-weight: 500;
-  color: #272727;
+  color: var(--title-color);
 }
 
 .blog-text .blog-title:hover{
